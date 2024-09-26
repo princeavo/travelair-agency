@@ -1,0 +1,1150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --section-padding : 40px;
+    --inline-padding : 202px;
+    --header-div-border-color : #ddd;
+    --var-purple-color : #7803A0;
+    --shadow-color : rgba(0, 0, 0, 0.1);
+    --orange-color: #FCD55A;
+    --orange-color-hover : #fcc614;
+    --tour-link-hover : #351565;
+    --new-section-margin-top: 140px;
+}
+.orange-btn{
+    padding: 20px;
+    display: inline-block;
+    width: 200px !important;
+    text-align: center;
+    border: none;
+    background-color: var(--orange-color);
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.orange-btn:active{
+    background-color: #0062CC;
+    box-shadow: 0 0 5px #0062CC;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.orange-btn:hover{
+    background-color: var(--orange-color-hover);
+    transition: 0.5s ease;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+body{
+    max-width: 1920px;
+    margin-inline: auto;
+    font-size: 16px;
+    padding-top: 125px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    width: 100%;
+    /* height: 140px; */
+    max-width: 1920px;
+    top: 0;
+    left: auto;
+    right: auto;
+    padding-inline: var(--section-padding);
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header .contact-informations{
+    justify-content: space-between;
+    padding-inline: var(--inline-padding);
+    border-bottom: 1px solid var(--header-div-border-color);
+}
+header .contact-informations i{
+    font-size: 13px;
+}
+header .contact-informations .mail-and-telephone i{
+    color: var(--var-purple-color);
+}
+header .contact-informations .mail-and-telephone,
+header .contact-informations .social-informations{
+    gap: 15px;
+}
+header .contact-informations .mail-and-telephone div,
+header .contact-informations .social-informations div{
+    gap: 10px;
+    padding-block: 10px;
+}
+header .contact-informations .social-informations div.search i{
+    cursor: pointer;
+}
+header .contact-informations .mail-and-telephone .mail-info,
+header .social-informations .social-links{
+    padding-right: 15px;
+    border-right: 1px solid var(--header-div-border-color);
+}
+header .contact-informations .social-informations .social-links{
+    gap: 20px;
+}
+header #navigation{
+    justify-content: space-between;
+    padding-inline: var(--inline-padding);
+    padding-top: 12px;
+    border-bottom: 1px solid var(--header-div-border-color);
+}
+header #navigation .logo img{
+    width: 169px;
+    height: 46px;
+}
+header #navigation nav ul{
+    list-style: none;
+}
+header #navigation nav > ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header #navigation nav > ul > li{
+    /* padding-top: 15px; */
+    padding-block: 27px;
+}
+header #navigation nav  ul li a{
+    padding-inline: 15px;
+}
+header #navigation nav .dropdown-nav-link,
+header #navigation nav .dropdown-nav-link > a{
+    position: relative;
+    text-transform: capitalize;
+}
+header #navigation nav .dropdown-nav-link > a::before{
+    position: absolute;
+    font-family: FontAwesome;
+    content: "\f0d7";
+    font-size: 10px;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    text-transform: none;
+}
+header #navigation nav .dropdown-nav-link ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+    box-shadow: 0 0 10px var(--shadow-color);
+    background-color: #fff;
+}
+header #navigation nav .dropdown-nav-link:hover ul{
+    /* display: flex; */
+    visibility: visible;
+}
+header #navigation nav .dropdown-nav-link ul li{
+    width: 200px;
+}
+header #navigation nav .dropdown-nav-link ul li{
+    height: 0;
+    opacity: 0;
+    /* transition: 0.25s ease; */
+    padding-inline: 15px;
+    border-bottom: 1px solid var(--header-div-border-color);
+}
+header #navigation nav .dropdown-nav-link ul li:first-child{
+    border-top: 1px solid var(--header-div-border-color);
+}
+header #navigation nav .dropdown-nav-link ul li:last-child{
+    padding: 15px 20px;
+    opacity: 1;
+    height: auto;
+}
+header #navigation nav .dropdown-nav-link:hover ul li:not(:last-child) {
+    padding-block:20px;
+    opacity: 1;
+    height: auto;
+    transition: 0.25s ease;
+}
+header #navigation nav .dropdown-nav-link ul li:hover{
+    background-color: #3D0F82;  
+    transition: 0.5s ease;
+}
+header #navigation nav .dropdown-nav-link ul li:hover a{
+    color: #fff;
+    transition: 0.5s ease;
+}
+header #navigation nav .dropdown-nav-link i{
+    display: none;
+}
+section#main-caroussel{
+    padding-inline: var(--section-padding);
+    overflow: hidden;
+}
+section#main-caroussel .caroussel .caroussel-items{
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.caroussel .caroussel-items.scrolling{
+    scroll-behavior: auto !important;
+    /* scroll-snap-type: none; */
+}
+section#main-caroussel .caroussel,
+section#main-caroussel .caroussel .caroussel-items .caroussel-item{
+    position: relative;
+}
+section#main-caroussel .caroussel .caroussel-items .caroussel-item img{
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+.caroussel i{
+    position: absolute;
+    font-size: 4em;
+    color: #888;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 5;
+}
+.caroussel i:hover{
+    color: #fff;
+    transition: 0.5s ease;
+}
+section#main-caroussel .caroussel i{
+    top: 50%;
+}
+section#main-caroussel .caroussel i:first-child{
+    left: 25px;
+}
+section#main-caroussel .caroussel i:last-child{
+    right: 25px;
+}
+section#main-caroussel .caroussel .caroussel-items .caroussel-item > div{
+    position: absolute;
+    left: 160px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 500px;
+}
+section#main-caroussel .caroussel .caroussel-items .caroussel-item > div h2{
+    text-transform: uppercase;
+    line-height: 1.2em;
+    font-size: 44px;
+}
+section#main-caroussel .caroussel .caroussel-items .caroussel-item > div .orange-btn{
+    margin-top: 30px;
+}
+section#main-caroussel .caroussel .caroussel-items .caroussel-item{
+    min-width: 100%;
+    max-width: 100%;
+    height: 80vh;
+    max-height: 600px;
+    overflow: hidden;
+}
+section#main-caroussel form{
+    background-color: #3D0F82;
+    padding-inline: var(--inline-padding);
+    padding-block: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+section#main-caroussel form select,input{
+    width: 255px;
+    padding: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+section#touristics-icons{
+    margin-top: var(--new-section-margin-top);
+    padding-inline: 20%;
+    margin-inline: auto;
+}
+section#touristics-icons > div{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 150px;
+    margin-bottom: 20px;
+}
+section#touristics-icons > div > div{
+    max-width: 430px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 40px;
+    line-height: 25px;
+    margin-top: 100px;
+}
+section#touristics-icons > div > div > a{
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+    padding-right: 10px;
+}
+section#touristics-icons > div > div > a::before{
+    position: absolute;
+    content: "i";
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: normal;
+}
+section#touristics-icons > div > div h2 a{
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+section#touristics-icons > div > a{
+    position: relative;
+}
+section#touristics-icons > div > a::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 0;
+    border-radius: 10px;
+}
+section#touristics-icons > div > a:hover::before {
+    background-color: var(--tour-link-hover);
+    opacity: 0.75;
+}
+section#touristics-icons > div > a img{
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+section#top-destinations-presentation{
+    padding-inline: var(--section-padding);
+    margin-top: var(--new-section-margin-top);
+}
+section#top-destinations-presentation h2{
+    font-size: 34px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+section#top-destinations-presentation > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section#top-destinations-presentation > div > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* max-width: 360px; */
+}
+section#top-destinations-presentation > div > div{
+    position: relative;
+}
+section#top-destinations-presentation > div > div::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    transition: 0.5s ease;
+}
+section#top-destinations-presentation > div > div:hover:before{
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease;
+}
+section#top-destinations-presentation > div > div .destination-name{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 1;
+    transition: 0.2s ease;
+    /* z-index: 3; */
+}
+section#top-destinations-presentation > div > div:hover .destination-name{
+    left: 0px;
+    opacity: 0;
+    transition: 0.2s ease;
+}
+section#top-destinations-presentation > div > div .destination-details{
+    position: absolute;
+    top:20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 30px;
+    color: #fff;
+    font-size: 18px;
+    display: none;
+}
+section#top-destinations-presentation > div > div:hover .destination-details{
+    display: flex;
+}
+section#top-destinations-presentation > div > div .destination-details h4{
+    font-size: 25px;
+}
+section#top-destinations-presentation > div > div .destination-details a{
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    width: fit-content;
+    padding-right: 10px;
+}
+section#top-destinations-presentation > div > div .destination-details a::before{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: "i";
+    transform: translateY(-50%);
+}
+section#top-destinations-presentation > div > div .destination-details ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+section#top-destinations-presentation > div > div .destination-details .price{
+    font-size: 30px;
+}
+section#top-destinations-presentation > div > div .destination-details ul li{
+    position: relative;
+    padding-left: 15px;
+}
+section#top-destinations-presentation > div > div .destination-details ul li::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: "i";
+    transform: translateY(-50%);
+}
+section#about-us{
+    padding-inline: var(--inline-padding);
+    margin-top: var(--new-section-margin-top);
+    padding-top: 100px;
+}
+section#about-us > div{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+section#about-us h2{
+    font-size: 34px;
+    font-weight: 500;
+    /* flex: 1; */
+}
+section#about-us > div > div.paragraphe{
+    flex: 1;
+}
+section#about-us > div > div.paragraphe p{
+    max-width: 740px;
+    font-size: 25px;
+    color: #555;
+    line-height: 35px;
+    margin-inline: auto;
+}
+section#about-us div.why-choose-us > div{
+    padding: 30px;
+    border: 1px solid var(--header-div-border-color);
+    flex: 1;
+    border-radius:10px;
+}
+section#about-us div.why-choose-us > div > div{
+    padding: 40px;
+    border-bottom: 1px solid var(--header-div-border-color);
+    display: flex;
+    gap: 40px;
+}
+section#about-us div.why-choose-us > div > div img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+section#about-us div.why-choose-us > div > div:last-child{
+    border-bottom: none;
+}
+section#about-us div.why-choose-us > div > div h3{
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 15px;
+}
+section#about-us div.why-choose-us > div > div span.number{
+    font-size: 28px;
+    color: var(--var-purple-color);
+    display: flex;
+    gap: 5px;
+}
+section#about-us div.why-choose-us > div > div span.number span.plus-signe{
+    font-size: 24px;
+}
+section#ourservices{
+    margin-inline: var(--section-padding);
+    padding-inline: var(--inline-padding);
+    margin-top: var(--new-section-margin-top);
+    padding-block: 100px;
+    background-image: url(../images/service_wrapper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section#ourservices > div.header{
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+}
+section#ourservices h2{
+    font-size: 34px;
+    font-weight: 500;
+}
+section#ourservices > div.header > div{
+    flex: 1;
+}
+section#ourservices > div.header > div > p{
+    max-width: 800px;
+    font-size: 25px;
+    color: #555;
+    line-height: 35px;
+    margin-inline: auto;
+}
+section#ourservices .services{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+}
+section#ourservices .services .service{
+    flex: 0 0 33.33%;
+    height: 240px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    transition: 0.5s ease;
+}
+section#ourservices .services .service img{
+    width: 50px;
+    height: 50px;
+}
+section#ourservices .services .service h4{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+section#ourservices .services .service:hover{
+    background-color: #fff;
+    transition: 1s ease;
+}
+section#ourservices .services .service:nth-child(1),
+section#ourservices .services .service:nth-child(2),
+section#ourservices .services .service:nth-child(3){
+    border-bottom: 1px solid #fff;
+}
+section#ourservices .services .service:nth-child(1),
+section#ourservices .services .service:nth-child(2),
+section#ourservices .services .service:nth-child(4),
+section#ourservices .services .service:nth-child(5){
+    border-right: 1px solid #fff;
+}
+section#comments{
+    padding-inline: var(--inline-padding);
+    margin-top: var(--new-section-margin-top);
+    display: flex;
+    background-color: #FFFCF7;
+}
+section#comments .left{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 40px;
+    width: 400px;
+    padding: 30px;
+}
+section#comments .left img{
+    width: 46px;
+    height: 36px;
+}
+section#comments .left h2{
+    font-weight: 34px;
+    font-weight: 500;
+    /* max-width: 220px; */
+}
+section#comments .left a{
+    position: relative;
+    font-weight: bold;
+    padding-right: 10px;
+    width: fit-content;
+}
+section#comments .left a::before{
+    position: absolute;
+    font-weight: normal;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    content: "i";
+}
+section#comments .caroussel-container{
+    flex: 1;
+    /* background-color: red; */
+    padding: 20px;
+}
+section#comments .caroussel-container .caroussel{
+    width: 540px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+section#comments .caroussel-container .caroussel i:hover{
+    color: var(--var-purple-color);
+}
+section#comments .caroussel-container .caroussel i{
+    bottom: 0;
+}
+section#comments .caroussel-container .caroussel i:first-child{
+    left: 120px;
+}
+section#comments .caroussel-container .caroussel i:last-child{
+    right: 120px;
+}
+section#comments .caroussel-container .caroussel .caroussel-items{
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+section#comments .caroussel-container .caroussel .caroussel-items .caroussel-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 10px;
+    min-width: 540px;
+    max-width: 540px;
+}
+section#comments .caroussel-container .caroussel .caroussel-items .caroussel-item .comment{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+section#comments .caroussel-container .caroussel .caroussel-items .caroussel-item .comment::after{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    content: "";
+    transform: translate(-50%,50%) rotate(45deg);
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+section#comments .caroussel-container .caroussel .caroussel-items .caroussel-item .comment p.content{
+    font-size: 21px;
+    line-height: 40px;
+    text-align: center;
+}
+section#comments .caroussel-container .caroussel .caroussel-items .caroussel-item img{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+section#comments .caroussel-container .caroussel .caroussel-items .caroussel-item .comment .author{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+#patners-logo{
+    padding-inline: var(--inline-padding);
+    margin-top: var(--new-section-margin-top);
+    /* background-color: #FFFCF7; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 80px;
+}
+footer{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to bottom, 
+                        rgba(64, 14, 130, 1) 0%, 
+                        rgba(64, 14, 130, 1) 0%, 
+                        rgba(64, 14, 130, 1) 0%, 
+                        rgba(117, 5, 125, 1) 50%, rgba(117, 5, 125, 1) 100%);
+    margin-inline: var(--section-padding);
+}
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--inline-padding);
+}
+footer .links *{
+    color: #fff;
+}
+footer .links img{
+    width: 138px;
+    height: 168px;
+}
+footer .links  h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+footer .links ul{
+    list-style: none;
+}
+footer .links ul li{
+    margin-bottom: 18px;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+footer .links li:not(.social-links-container) a{
+    position: relative;
+    padding-left: 15px;
+}
+footer .links li:not(.social-links-container) a::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: ">";
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+footer .copyright{
+    background-color: #3D0F82;
+    padding: 20px;
+    text-align: center;
+}
+#search-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -10;
+    /* display: none; */
+    opacity: 0;
+    transition:0.5s ease;
+}
+#search-modal.open{
+    /* display: block; */
+    z-index: 150;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+#search-modal .modal{
+    transform: translateY(-200px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 15px;
+    margin-inline: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+#search-modal.open .modal{
+    transform: translateY(50px);
+    transition: 0.5s ease;
+}
+#search-modal .modal input{
+    background-color: #eee;
+    padding: 40px 20px;
+    width: 100%;
+}
+#search-modal .modal button{
+    width: 120px !important;
+    padding: 15px;
+    font-size: 12px;
+}
+@media all and (max-width:1700px) {
+    :root{
+        --section-padding : 40px;
+        --inline-padding : 15%;
+        --new-section-margin-top: 100px;
+    }
+}
+@media all and (max-width:1500px) {
+    :root{
+        --inline-padding : 10%;
+    }
+}
+@media all and (max-width:1400px) {
+    :root{
+        --inline-padding : 8%;
+    }
+}
+@media all and (max-width:1200px) {
+    :root{
+        --inline-padding : 20px;
+    }
+    header .contact-informations .mail-and-telephone, 
+    header .contact-informations .social-informations{
+        gap: 50px;
+    }
+    body > header > div.contact-informations {
+        gap: 15%;
+    }
+    body > header > div.contact-informations > div.social-informations{
+        margin-left: 100px;
+        flex: 1;
+        justify-content: space-around;
+    }
+    section#touristics-icons > div > a img{
+        width: 290px;
+    }
+    section#touristics-icons{
+        padding-inline: 14%;
+    }
+    section#touristics-icons > div{
+        margin-bottom: 40px;
+    }
+    section#main-caroussel .caroussel .caroussel-items .caroussel-item > div{
+        left: 100px;
+    }
+    header #navigation .logo img{
+        width: 130px;
+        height: 35px;
+    }
+}
+@media all and (max-width:1100px) {
+    body > header > div.contact-informations > div.social-informations{
+        margin-left: 0px;
+    }
+    header #navigation .logo img{
+        width: 125px;
+        height: 34px;
+    }
+    /* body > header > div.contact-informations {
+        gap: 0;
+    } */
+}
+@media all and (max-width:991px) {
+    section#top-destinations-presentation > div{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    section#top-destinations-presentation > div > div{
+        flex: 0 0 50%;
+    }
+    #patners-logo{
+        gap: 50px;
+    }
+    section#main-caroussel form{
+        flex-wrap: wrap;
+    }
+    header #navigation nav > ul > li{
+        padding-block: 5px;
+    }
+    header #navigation{
+        padding-block: 20px;
+    }
+    header #navigation nav .dropdown-nav-link ul{
+        top: 50px;
+    }
+    :root{
+        --section-padding : 40px;
+        --inline-padding : 50px;
+    }
+    section#comments{
+        flex-wrap: wrap;
+    }
+    header #navigation nav > ul{
+        flex-wrap: wrap;
+    }
+    section#ourservices .services .service{
+        flex: 0 0 50%;
+    }
+    footer .links{
+        gap: 20px;
+        padding-inline: 20px;
+    }
+    section#touristics-icons > div{
+        gap: 50px;
+    }
+    section#about-us div.why-choose-us > div > div{
+        gap: 20px;
+        padding: 20px;
+    }
+}
+@media all and (max-width:850px) {
+    body > header > div.contact-informations{
+        gap: 10%;
+    }
+    section#main-caroussel form{
+        row-gap: 10px;
+    }
+    section#main-caroussel form select,
+    section#main-caroussel form input,
+    section#main-caroussel form button{
+        flex: 0 0 calc(50% - 15px);
+    }
+    section#about-us div.why-choose-us > div > div{
+        flex-wrap: wrap;
+    }
+}
+@media all and (max-width:780px) {
+    section#top-destinations-presentation > div > div{
+        flex: 0 0 45%;
+    }
+    section#top-destinations-presentation > div,
+    section#touristics-icons > div{
+        gap: 20px;
+    }
+    #patners-logo{
+        gap: 30px;
+    }
+    body > header > div.contact-informations{
+        flex-wrap: wrap;
+    }
+    body > header > div.contact-informations > div.social-informations{
+        justify-content: flex-start;
+    }
+    section#touristics-icons > div > div{
+        margin-top: 0;
+    }
+    section#touristics-icons > div{
+        flex-wrap: wrap;
+    }
+    section#touristics-icons > div > a {
+        width: 100%;
+    }
+    section#touristics-icons > div > a img{
+        width: 100%;
+    }
+    section#about-us > div,
+    section#ourservices > div.header,
+    section#ourservices .services{
+        display: block;
+    }
+    section#about-us div.why-choose-us > div:not(:last-child){
+        margin-bottom: 40px;
+    }
+    section#about-us > div h2,
+    section#ourservices > div.header h2{
+        margin-bottom: 40px;
+    }
+    section#about-us div.why-choose-us > div > div{
+        padding: 40px;
+    }
+    footer .links{
+        flex-wrap: wrap;
+    }
+    section#ourservices .services .service{
+        border: none !important;
+    }
+    section#main-caroussel .caroussel .caroussel-items .caroussel-item > div h2{
+        font-size: 25px;
+    }
+    section#main-caroussel .caroussel .caroussel-items .caroussel-item > div{
+        transform: none;
+    }
+    .orange-btn{
+        padding: 15px;
+        font-size: 18px;
+    }
+    section#main-caroussel .caroussel .caroussel-items .caroussel-item{
+        height: 450px;
+    }
+    section#main-caroussel .caroussel .caroussel-items .caroussel-item > div{
+        left: 70px;
+    }
+}
+@media all and (max-width:700px) {
+    #search-modal .modal{
+        min-width: 350px !important;
+        max-width: 350px !important;
+    }
+    #patners-logo{
+        flex-wrap: wrap;
+        gap: 0;
+        row-gap: 25px;
+    }
+    #patners-logo a{
+        flex: 0 0 50%;
+    }
+    header{
+        position: static;
+    }
+    body{
+        padding-top: 0px;
+    }
+    header #navigation .logo img{
+        width: 169px;
+        height: 46px;
+    }
+    header #navigation{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 30px;
+        width: 100%;
+    }
+    header #navigation nav{
+        width: 100%;
+    }
+    header #navigation nav > ul{
+        flex-direction: column;
+        gap: 0;
+    }
+    header #navigation nav > ul > li{
+        width: 100%;
+        padding: 0;
+        border: 1px solid var(--header-div-border-color);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    header #navigation nav .dropdown-nav-link > a{
+        display: inline-block;
+        position: static;
+    }
+    header #navigation nav ul li a{
+        /* width: 100%; */
+        padding:20px 10px;
+    }
+    header #navigation nav .dropdown-nav-link > a::before{
+        display: none;
+    }
+    header #navigation nav .dropdown-nav-link ul{
+        display: flex;
+        position: static;
+        flex: 1 1 100%;
+        box-shadow: none;
+        margin-top: 5px;
+        visibility: visible;
+        display: none;
+        transition: 1s ease;
+    }
+    header #navigation nav .dropdown-nav-link.open ul{
+        display: flex;
+        transition: 1s ease;
+    }
+    header #navigation nav .dropdown-nav-link ul li{
+        width: 100%;
+        padding-inline: 10px;
+        height: auto;
+        opacity: 1;
+        padding-block: 20px;
+    }
+    header #navigation nav .dropdown-nav-link ul li a{
+        padding: 0;
+    }
+    header #navigation nav .dropdown-nav-link ul li:last-child{
+        border-bottom: none;
+        padding:20px 10px;
+    }
+    header #navigation nav .dropdown-nav-link i{
+        display: inline-block;
+        border: 1px solid var(--header-div-border-color);
+        padding:20px;
+        position: relative;
+        top: 2px;
+        cursor: pointer;
+    }
+    header #navigation nav .dropdown-nav-link i.fa-minus{
+        display: none;
+    }
+    header #navigation nav  li:hover{
+        background-color: #3D0F82;
+        transition: 0.5s ease;
+    }
+    header #navigation nav li:hover > a,
+    header #navigation nav li:hover >  i{
+        color: #fff;
+        transition: 0.5s ease;
+    }
+    :root{
+        --section-padding : 60px;
+        --inline-padding : 60px;
+    }
+    header .contact-informations,
+    header #navigation,
+    section#comments,
+    section#touristics-icons{
+        padding-inline: 0;
+    }
+    header .contact-informations .mail-and-telephone{
+        display: none;
+    }
+    body > header > div.contact-informations > div.social-informations{
+        justify-content: space-between;
+    }
+    section#main-caroussel form{
+        padding-inline: 20px;
+    }
+    section#main-caroussel form select, section#main-caroussel form input, section#main-caroussel form button{
+        flex: 100%;
+    }
+}
+@media all and (max-width:600px) {
+    section#main-caroussel .caroussel .caroussel-items .caroussel-item{
+        height: 350px;
+    }
+    section#top-destinations-presentation > div > div{
+        flex: 100%;
+    }
+    section#comments .caroussel-container .caroussel .caroussel-items .caroussel-item .comment{
+        padding: 20px;
+    }
+    section#comments .caroussel-container .caroussel .caroussel-items .caroussel-item,
+    section#comments .caroussel-container .caroussel{
+        max-width: 350px;
+        min-width: 350px;
+    }
+    section#comments .caroussel-container .caroussel i:first-child{
+        left: 50px;
+    }
+    section#comments .caroussel-container .caroussel i:last-child{
+        right: 50px;
+    }
+}
+@media all and (max-width:580px) {
+    footer .links{
+        flex-direction: column;
+    }
+    :root{
+        --section-padding : 10px;
+        --inline-padding : 10px;
+    }
+    section#touristics-icons{
+        padding-inline: 10px;
+    }
+}

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelair Agency HTML Website Template</title>
+    <link rel="stylesheet" href="./assets/font-awesome/css/all.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="contact-informations">
+            <div class="mail-and-telephone">
+                <div class="mail-info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@travel.com</span>
+                </div>
+                <div class="phone-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+180-123-4567</span>
+                </div>
+            </div>
+            <div class="social-informations">
+                <div class="social-links">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a> 
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass" data-modal="#search-modal"></i>
+                </div>
+            </div>
+        </div>
+        <div id="navigation">
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/images/logo.png" alt="Travelair logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="dropdown-nav-link">
+                        <a href="#">
+                            Tour packages
+                        </a>
+                        <i class="fa fa-plus"></i>
+                        <i class="fa fa-minus"></i>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Tour list</a>
+                            </li>
+                            <li>
+                                <a href="#">Tour single</a>
+                            </li>
+                            <li>
+                                <a href="#">Tour list single</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li class="dropdown-nav-link">
+                        <a href="#">Blog</a>
+                        <i class="fa fa-plus"></i>
+                        <i class="fa fa-minus"></i>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Blog default</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog single</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-nav-link">
+                        <a href="#">Pages</a>
+                        <i class="fa fa-plus"></i>
+                        <i class="fa fa-minus"></i>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Clients reviews</a>
+                            </li>
+                            <li>
+                                <a href="#">Tour booking</a>
+                            </li>
+                            <li>
+                                <a href="#">Tabs</a>
+                            </li>
+                            <li>
+                                <a href="#">Accordions</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="./404-page.html">404 page</a>
+                            </li>
+                            <li>
+                                <a href="#">Call to actions</a>
+                            </li>
+                            <li>
+                                <a href="#">Styleguide</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Template Feature</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="main-caroussel">
+        <div class="caroussel">
+            <i class="fa-solid fa-caret-left leftbtn"></i>
+            <div class="caroussel-items">
+                <div class="caroussel-item">
+                    <img src="./assets/images/slider_1.jpg" alt="">
+                    <div>
+                        <h2>Get travel website template</h2>
+                        <a href="#" class="orange-btn">Get template</a>
+                    </div>
+                </div>
+                <div class="caroussel-item">
+                    <img src="./assets/images/slider_2.jpg" alt="">
+                    <div>
+                        <h2>Travelair agency website template</h2>
+                        <a href="#" class="orange-btn">Download template</a>
+                    </div>
+                </div>
+                <div class="caroussel-item">
+                    <img src="./assets/images/slider_3.jpg" alt="">
+                    <div>
+                        <h2>Bet tourist website template</h2>
+                        <a href="#" class="orange-btn">View packages</a>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-caret-right rightbtn"></i>
+        </div>
+        <form action="#">
+            <select id="travel-destination" name="destination">
+                <option value="">Where you wan to go?</option>
+                <option value="singapore">Singapore</option>
+                <option value="thailand">Thailand</option>
+                <option value="vietnam">Vietnam</option>
+            </select>
+            <input type="date" name="travel_date" id="travel_date">
+            <select name="travel_number_personnes" id="travel_number_personnes">
+                <option value="">Number of personnes</option>
+                <option value="6">6</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+            </select>
+            <button type="submit" class="orange-btn">
+                Enquiry now
+            </button>
+        </form>
+    </section>
+    <section id="touristics-icons">
+        <div>
+            <a href="#">
+                <img src="./assets/images/tour_img_1.jpg" alt="">
+            </a>
+            <div>
+                <h2>
+                    <a href="#">International Tour</a>
+                </h2>
+                <p>
+                    Vestibulum nec mauris interdum facilisis nequeet convallis 
+                    odioses praesentet lacinia orciulla dolorerat ullamcorper 
+                    sitamet meuesered egestas venenatis enimusce sed ipsum seddolor.
+                </p>
+                <a href="#">
+                    Go For International Tour
+                </a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>
+                    <a href="#">Adventure Tour</a>
+                </h2>
+                <p>
+                    Donec porttitor lorem utdiam iaculis 
+                    euismod congue eroset lectus consectetur 
+                    fermen uspendissolutpat risus utarcu dapibusat 
+                    conquat quam sodenean pretium a metus euauctor.
+                </p>
+                <a href="#">
+                    Go For Adventure Tour
+                </a>
+            </div>
+            <a href="#">
+                <img src="./assets/images/tour_img_2.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="./assets/images/tour_img_3.jpg" alt="">
+            </a>
+            <div>
+                <h2>
+                    <a href="#">Domestic Tour</a>
+                </h2>
+                <p>
+                    Proin in urna hendrerit tortor dignissim 
+                    auctor vitae etnibstibulum venenatis lectus 
+                    urnaut sodales nibh sagittis eestibulum ante 
+                    ipsum primisin faucibusorci luctus etultrices 
+                    posuere cubilia.
+                </p>
+                <a href="#">
+                    Go For Domestic Tour
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="top-destinations-presentation">
+        <h2>Top destinations</h2>
+        <div>
+            <div>
+                <img src="./assets/images/destination_1.jpg" alt="Singapore">
+                <p class="destination-name">
+                    Singapore
+                </p>
+                <div class="destination-details">
+                    <h4>Singapore</h4>
+                    <ul>
+                        <li>4 Nights / 3 days</li>
+                        <li>3 star hotel</li>
+                        <li>Breakfast and Dinner</li>
+                    </ul>
+                    <p class="price">
+                        $1599
+                    </p>
+                    <a href="#">Gor for the singapore</a>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/destination_2.jpg" alt="Singapore">
+                <p class="destination-name">
+                    Thailand
+                </p>
+                <div class="destination-details">
+                    <h4>Singapore</h4>
+                    <ul>
+                        <li>4 Nights / 3 days</li>
+                        <li>3 star hotel</li>
+                        <li>Breakfast and Dinner</li>
+                    </ul>
+                    <p class="price">
+                        $1599
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/destination_3.jpg" alt="Singapore">
+                <p class="destination-name">
+                    Vietnam
+                </p>
+                <div class="destination-details">
+                    <h4>Singapore</h4>
+                    <ul>
+                        <li>4 Nights / 3 days</li>
+                        <li>3 star hotel</li>
+                        <li>Breakfast and Dinner</li>
+                    </ul>
+                    <p class="price">
+                        $1599
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/destination_4.jpg" alt="Singapore">
+                <p class="destination-name">
+                    Melbourne
+                </p>
+                <div class="destination-details">
+                    <h4>Singapore</h4>
+                    <ul>
+                        <li>4 Nights / 3 days</li>
+                        <li>3 star hotel</li>
+                        <li>Breakfast and Dinner</li>
+                    </ul>
+                    <p class="price">
+                        $1599
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-us">
+        <div>
+            <h2>We are <br>Travel Agency</h2>
+            <div class="paragraphe">
+                <p>Pellentesque luctus felis non nibh masus 
+                    consectetuis sed nisl eniull lentesque euismod 
+                    eronon ntesque tortor molestie egurabitur lorem 
+                    ien elementumelitac eleifue nisl fringilla nisia tris.</p>
+            </div>
+        </div>
+        <div class="why-choose-us">
+            <div>
+                <div>
+                    <img src="./assets/images/calendar.png" alt="">
+                    <div>
+                        <h3>Everything’s on Schedule</h3>
+                        <p>Cras porttitor tortor erateget accumsan is feltumsit.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/images/adventure.png" alt="">
+                    <div>
+                        <h3>Destination Variety</h3>
+                        <p>Pellentesque imperdiet esmpus finibusse euismunc.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/images/hotel.png" alt="">
+                    <div>
+                        <h3>Comfortable Housing</h3>
+                        <p>Vestiulum sodales tempudin one erlctus iedate.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="number">689<span class="plus-signe">+</span></span>
+                    <div>
+                        <h3>Tours</h3>
+                        <p>Cras porttitor tortor erateget taccumsan.</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="number">320<span class="plus-signe">+</span></span>
+                    <div>
+                        <h3>Destinations</h3>
+                        <p>Pellentesque luctus felisnon nib its consecteuis.</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="number">60<span class="plus-signe">+</span></span>
+                    <div>
+                        <h3>Countries</h3>
+                        <p>Sed gravida eleequenec fringilla dolonteger.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ourservices">
+        <div class="header">
+            <h2>Our services</h2>
+            <div>
+                <p>
+                    Suctus felis non nibh maximus consectetuis 
+                    sed nisl eniullase pellentesque euismod eronon 
+                    ntesque tortor molestieege.
+                </p>
+            </div>
+        </div>
+        <div class="services">
+            <div class="service">
+                <img src="./assets/images/hotel_1.png" alt="Hotel reservation">
+                <h4>Hotel reservation</h4>
+            </div>
+            <div class="service">
+                <img src="./assets/images/disability.png" alt="Staff Transportation Services">
+                <h4>Staff Transportation Services</h4>
+            </div>
+            <div class="service">
+                <img src="./assets/images/airplane.png" alt="Air Ticketing Services">
+                <h4>Air Ticketing Services</h4>
+            </div>
+            <div class="service">
+                <img src="./assets/images/passport.png" alt="Passport and Visa Assistance">
+                <h4>Passport and Visa Assistance</h4>
+            </div>
+            <div class="service">
+                <img src="./assets/images/car_wash.png" alt="Car Rental Services">
+                <h4>Car Rental Services</h4>
+            </div>
+            <div class="service">
+                <img src="./assets/images/car.png" alt="HCar on Call">
+                <h4>Car on Call</h4>
+            </div>
+        </div>
+    </section>
+    <section id="comments">
+        <div class="left">
+            <img src="./assets/images/left_quote.png" alt="">
+            <h2>What Our Customers Say About Our Tours</h2>
+            <a href="#">Read All Reviews</a>
+        </div>
+        <div class="caroussel-container">
+            <div class="caroussel">
+                <i class="fa-solid fa-caret-left leftbtn"></i>
+                <div class="caroussel-items">
+                    <div class="caroussel-item">
+                        <div class="comment">
+                            <p class="content">
+                                “Proin dictum justo at finibus 
+                                consectetur Proin odio odio molestie 
+                                qui commodo sit amet euismod dictum 
+                                ligula”
+                            </p>
+                            <p class="author">
+                                <strong class="author-name">
+                                    - Maria Young
+                                </strong>
+                                <span class="author-title">
+                                    (Our Tourist)
+                                </span>
+                            </p>
+                        </div>
+                        <img src="./assets/images/testi_img_1.jpg" alt="">
+                    </div>
+                    <div class="caroussel-item">
+                        <div class="comment">
+                            <p class="content">
+                                “Proin dictum justo at finibus consectetur 
+                                Proin odio odio molestie qui commodo sit 
+                                amet euismod dictum ligula”
+                            </p>
+                            <p class="author">
+                                <strong class="author-name">
+                                    - Maria Young
+                                </strong>
+                                <span class="author-title">
+                                    (Our Tourist)
+                                </span>
+                            </p>
+                        </div>
+                        <img src="./assets/images/testi_img_2.jpg" alt="">
+                    </div>
+                    <div class="caroussel-item">
+                        <div class="comment">
+                            <p class="content">
+                                “Crasin leo arcuiquamnec elementum 
+                                erossed tincidunt dolroin tristiquecongue 
+                                Inaex pharetra euismod duieget”
+                            </p>
+                            <p class="author">
+                                <strong class="author-name">
+                                    - Maria Young
+                                </strong>
+                                <span class="author-title">
+                                    (Our Tourist)
+                                </span>
+                            </p>
+                        </div>
+                        <img src="./assets/images/testi_img_3.jpg" alt="">
+                    </div>
+                </div>
+                <i class="fa-solid fa-caret-right rightbtn"></i>
+            </div>
+        </div>
+    </section>
+    <div id="patners-logo">
+        <a href="#">
+            <img src="./assets/images/dummy_logo_1.png" alt="">
+        </a>
+        <a href="#">
+            <img src="./assets/images/dummy_logo_2.png" alt="">
+        </a>
+        <a href="#">
+            <img src="./assets/images/dummy_logo_3.png" alt="">
+        </a>
+        <a href="#">
+            <img src="./assets/images/dummy_logo_4.png" alt="">
+        </a>
+        <a href="#">
+            <img src="./assets/images/dummy_logo_2.png" alt="">
+        </a>
+        <a href="#">
+            <img src="./assets/images/dummy_logo_1.png" alt="">
+        </a>
+    </div>
+    <footer>
+        <div class="links">
+            <img src="./assets/images/ft_logo.png" alt="logo Travelair Agency">
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Customers Reviews</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Tour Packages</h3>
+                <ul>
+                    <li><a href="#">International tour</a></li>
+                    <li><a href="#">Domestic Tour</a></li>
+                    <li><a href="#">Adventure Tour</a></li>
+                    <li><a href="#">Business Tour</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            3927 Birch StreetEl Paso, TX 79930
+                        </span>                        
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            +180-123-4567
+                        </span>  
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            info@travel.com
+                        </span> 
+                    </li>
+                    <li class="social-links-container">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="#">Template Hub</a>
+        </div>
+    </footer>
+
+
+    <div class="modal-outer" id="search-modal">
+        <div class="modal">
+            <input type="text" placeholder="Find here">
+            <button type="button" class="orange-btn close-btn">
+                Close
+            </button>
+        </div>
+    </div>
+    <script src="./assets/js/caroussel.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+</body>
+</html>

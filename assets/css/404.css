@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.orange-btn{
+    padding: 20px;
+    display: inline-block;
+    width: 200px !important;
+    text-align: center;
+    border: none;
+    background-color: #FCD55A;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.orange-btn:active{
+    background-color: #0062CC;
+    box-shadow: 0 0 5px #0062CC;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.orange-btn:hover{
+    background-color: #fcc614;
+    transition: 0.5s ease;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+body{
+    max-width: 1920px;
+    min-height: 100vh;
+    /* display: flex;
+    align-items: center; */
+    padding-left: 20%;
+    padding-top: 20%;
+    margin-inline: auto;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    background-image: url(../images/error_wrapper.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    color: #fff;
+}
+div{
+    max-width: 450px;
+}
+h1{
+    font-size: 64px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+h3{
+    font-size: 34px;
+    line-height: 50px;
+    font-weight: 500;
+}
+p{
+    line-height: 25px;
+    margin-block: 30px;
+    font-size: 18px;
+}
